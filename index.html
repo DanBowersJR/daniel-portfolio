@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <!-- Title of the webpage -->
+  </head>
+  <body>
+    <div class="fade-in">
+      <!-- Content that will fade in goes here -->
+
+      <!-- Header section with navigation and greeting -->
+      <header class="header" role="banner" id="top">
+        <div class="row">
+          <nav class="nav" role="navigation">
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__text-box row">
+          <div class="header__text">
+            <h1 class="heading-primary"><span>Daniel Bowers</span></h1>
+            <p>Keyin College Software Development Student</p>
+            <button id="contactButton" class="btn btn--pink">
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content area -->
+      <main role="main">
+        <!-- About section -->
+        <section class="about" id="about">
+          <div class="row">
+            <h2>About Me</h2>
+            <div class="about__content">
+              <div class="about__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                </p>
+                <a href="#" class="btn">My Resume</a>
+              </div>
+              <div class="about__photo-container">
+                <img
+                  class="about__photo"
+                  src="./images/mylinkedIN.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Contact section -->
+      <section class="contact" id="contact">
+        <div class="row">
+          <h2>Get in Touch</h2>
+          <div class="contact__info">
+            <p>
+              Are you looking for a fast-performing and user-friendly website...
+            </p>
+            <a href="mailto:danbowersjr@hotmail.com" class="btn"
+              >danbowersjr@hotmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section with social links and copyright -->
+      <footer role="contentinfo" class="footer">
+        <div class="row">
+          <ul class="footer__social-links">
+            <li class="footer__social-link-item">
+              <a
+                href="https://github.com/nisarhassan12/"
+                title="Link to Github Profile"
+              >
+                <img
+                  src="./images/github.svg"
+                  class="footer__social-image"
+                  alt="Github"
+                />
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a
+                href="https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/"
+              >
+                <img
+                  src="./images/linkedin.svg"
+                  class="footer__social-image"
+                  alt="Linkedin"
+                />
+              </a>
+            </li>
+          </ul>
+          <p>@2024 Daniel Bowers</p>
+        </div>
+      </footer>
+
+      <!-- JavaScript for handling button click -->
+      <script>
+        document
+          .getElementById("contactButton")
+          .addEventListener("click", function () {
+            alert("Hello world!");
+            window.scrollTo(0, document.body.scrollHeight); // Scrolls to the bottom of the page after closing the alert
+          });
+      </script>
+    </div>
+  </body>
+</html>
